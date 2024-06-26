@@ -1,0 +1,164 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.company-info {
+    margin-bottom: 20px;
+}
+
+.company-info h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.add-employee-form {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-employee-form form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.add-employee-form label,
+.add-employee-form input,
+.add-employee-form select,
+.add-employee-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-employee-form input,
+.add-employee-form select,
+.add-employee-form textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-employee-form textarea {
+    resize: vertical;
+}
+
+.add-employee-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-employee-form button:hover {
+    background-color: #0056b3;
+}
+
+.employee-list {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-list th,
+.employee-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.employee-list th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+@media print {
+    .print-btn,
+    .modify-btn {
+        display: none;
+    }
+}

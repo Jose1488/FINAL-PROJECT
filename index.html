@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Bul Kon</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Resources Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="logo.png" alt="Company Logo" class="logo">
+            </div>
+            <h1 class="welcome-message">Welcome to Our Human Resources Application</h1>
+            <div class="company-info">
+                <h2>JOSEPH</h2>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <!-- Add Employee Form -->
+            <section class="add-employee-form">
+                <h2>Add a New Employee</h2>
+                <form id="addEmployeeForm">
+                    <label for="nationalId">National ID:</label>
+                    <input type="text" id="nationalId" name="nationalId" required><br><br>
+                    
+                    <label for="employeeName">Employee Name:</label>
+                    <input type="text" id="employeeName" name="employeeName" required><br><br>
+                    
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="Management">Management</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Maintenance">Maintenance</option>
+                    </select><br><br>
+                    
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+                    
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea><br><br>
+                    
+                    <label for="dateOfAppointment">Date of Appointment:</label>
+                    <input type="date" id="dateOfAppointment" name="dateOfAppointment" required><br><br>
+                    
+                    <button type="submit" class="btn add-employee-btn">Add Employee</button>
+                </form>
+            </section>
+            
+            <!-- Employee List Section -->
+            <section class="employee-list">
+                <h2>Employee List</h2>
+                <table id="employeeTable">
+                    <thead>
+                        <tr>
+                            <th>National ID</th>
+                            <th>Employee Name</th>
+                            <th>Department</th>
+                            <th>Phone Number</th>
+                            <th>Address</th>
+                            <th>Date of Appointment</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Employee data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+                <div class="btn-group">
+                    <button class="btn print-btn" onclick="printEmployeeList()">Print</button>
+                    <button class="btn modify-btn" onclick="modifyEmployeeList()">Modify</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
